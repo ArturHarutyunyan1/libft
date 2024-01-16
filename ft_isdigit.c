@@ -1,13 +1,8 @@
 #include "libft.h"
 
-int	ft_isdigit(int a)
+int	ft_isdigit(int c)
 {
-	char	c;
-
-	c = (char)a;
 	if (!(c >= 48 && c <= 57))
-	{
 		return (0);
-	}
 	return (1);
 }
