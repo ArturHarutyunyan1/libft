@@ -25,7 +25,7 @@ int	ft_toupper(int c);
 int	ft_tolower(int c);
 int	ft_strncmp(const char *str1, const char *str2, size_t n);
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t n);
-
+int	ft_atoi(const char *str);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
