@@ -1,20 +1,13 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_isalpha(int argument)
+int	ft_isalpha(int a)
 {
 	char	c;
 
-	c = (char)argument;
+	c = (char)a;
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 		return (1);
 	}
 	return (0);
 }
-/*
-int main()
-{
-	printf("ft - %d\n", ft_isalpha('s'));
-	printf("lib - %d\n", isalpha('s'));
-}*/

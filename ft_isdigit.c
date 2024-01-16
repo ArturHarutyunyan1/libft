@@ -1,20 +1,13 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_isdigit(int arg)
+int	ft_isdigit(int a)
 {
 	char	c;
 
-	c = (char)arg;
+	c = (char)a;
 	if (!(c >= 48 && c <= 57))
 	{
 		return (0);
 	}
 	return (1);
 }
-/*
-int main()
-{
-	printf("ft - %d\n", ft_isdigit('6'));
-	printf("lib - %d\n", isdigit('6'));
-}*/
