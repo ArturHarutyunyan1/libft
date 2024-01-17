@@ -1,31 +1,26 @@
 SRCS := $(wildcard ft_*.c)
 NAME = libft.a
 
-OBJS_DIR = objs/
-OBJS = $(SRCS:.c=.o)
-OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
+OBJS = ${SRCS:.c=.o}
+LIBC = ar rcs
+CC = cc
+RM = rm -f
+CFLAGS = -Wall -Wextra -Werror
 
-OBJSB = $(SRCSB:.c=.o)
+.c.o:
+	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
-CC = clang
+${NAME}: ${OBJS}
+	${LIBC} ${NAME} ${OBJS}
 
-CC_FLAGS = -Wall -Wextra -Werror
-
-$(OBJS_DIR)%.o : %.c libft.h
-	@mkdir -p $(OBJS_DIR)
-	@echo "Compiling: $<"
-	@clang $(CC_FLAGS) -c $< -o $@
-
-$(NAME): $(OBJECTS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_PREFIXED)
-	@echo "Libft Done !"
-
-all: $(NAME)
+all: ${NAME}
 
 clean:
-	rm -rf $(OBJS_DIR)
+	${RM} ${OBJS}
 
 fclean: clean
-	rm -f $(NAME)
+	${RM} ${NAME}
 
 re: fclean all
+
+.PHONY : all bonus clean fclean re
