@@ -1,18 +1,25 @@
 #include "libft.h"
 
+static unsigned int	ft_module_fd(int n)
+{
+	if (n < 0)
+		return (n * (-1));
+	else
+		return (n);
+}
+
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
-		ft_putstr_fd("-2147483648", fd);
-	else
+	unsigned int	num;
+
+	if (n < 0)
+		ft_putchar_fd('-', fd);
+	num = ft_module_fd(n);
+	if (num >= 10)
 	{
-		if (n < 0)
-		{
-			ft_putchar_fd('-', fd);
-			n *= -1;
-		}
-		if (n >= 0)
-			ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd((n % 10) + '0', fd);
+		ft_putnbr_fd(num / 10, fd);
+		ft_putnbr_fd(num % 10, fd);
 	}
+	else
+		ft_putchar_fd(num + 48, fd);
 }
