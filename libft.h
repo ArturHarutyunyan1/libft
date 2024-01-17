@@ -31,6 +31,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
 char    *ft_strdup(const char *src);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

@@ -25,5 +25,5 @@ char	*ft_strrchr(const char *str, int c)
 			last_occurance = (char *)&str[i];
 		i++;
 	}
-	return (last_ccurance);
+	return (last_occurance);
 }
