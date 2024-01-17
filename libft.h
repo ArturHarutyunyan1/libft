@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <ctype.h>
 # include <string.h>
+# include <fcntl.h>
 
 void	*ft_memset(void *ptr, int value, size_t	n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
@@ -26,6 +27,8 @@ void	ft_bzero(void *s, size_t n);
 void    *ft_calloc(size_t num, size_t size);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
