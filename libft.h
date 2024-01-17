@@ -28,6 +28,7 @@ void    *ft_calloc(size_t num, size_t size);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
+char    *ft_strdup(const char *src);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
