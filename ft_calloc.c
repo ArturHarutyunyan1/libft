@@ -3,10 +3,20 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
-
-	ptr = malloc(count * size);
-	if (ptr == 0)
+	size_t	i;
+	i = 0;
+	if (count != 0 && (count * size) / count != size)
+		return (NULL);
+	ptr = (void *)malloc(size * count);
+	if (!ptr)
+		return (NULL);
+	if (size == 0)
 		return (ptr);
-	ft_bzero(ptr, count * size);
+	i = 0;
+	while (i < (count * size))
+	{
+		ft_memset(ptr, 0, count * size);
+		i++;
+	}
 	return (ptr);
 }
