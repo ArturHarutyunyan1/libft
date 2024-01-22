@@ -6,7 +6,7 @@
 /*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 17:26:01 by arturhar          #+#    #+#             */
-/*   Updated: 2024/01/20 17:31:15 by arturhar         ###   ########.fr       */
+/*   Updated: 2024/01/22 11:54:24 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,7 +17,7 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 
 	if (s == NULL)
-		return;
+		return ;
 	i = 0;
 	str = (char *)s;
 	while (i < n)

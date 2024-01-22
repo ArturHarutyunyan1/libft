@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_display_file.c                                  :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 00:31:44 by arturhar          #+#    #+#             */
-/*   Updated: 2024/01/17 00:31:50 by arturhar         ###   ########.fr       */
+/*   Created: 2024/01/22 12:07:23 by arturhar          #+#    #+#             */
+/*   Updated: 2024/01/22 12:07:40 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
 	unsigned long	i;
-	size_t		j;
+	size_t			j;
 
 	i = 0;
 	if ((!haystack || !needle) && (n == 0))

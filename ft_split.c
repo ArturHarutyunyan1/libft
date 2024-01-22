@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/22 11:58:29 by arturhar          #+#    #+#             */
+/*   Updated: 2024/01/22 12:31:54 by arturhar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 static size_t	count_words(const char *s, char c)
@@ -26,7 +37,10 @@ static char	*ft_strndup(const char *str, size_t n)
 	size_t	len;
 	char	*dup;
 
-	len = (n < ft_strlen(str)) ? n : ft_strlen(str);
+	if (n < ft_strlen(str))
+		len = n;
+	else
+		len = ft_strlen(str);
 	dup = malloc((len + 1) * sizeof(char));
 	if (!dup)
 		return (NULL);

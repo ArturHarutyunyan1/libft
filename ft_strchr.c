@@ -1,15 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_display_file.c                                  :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 00:31:44 by arturhar          #+#    #+#             */
-/*   Updated: 2024/01/17 00:31:50 by arturhar         ###   ########.fr       */
+/*   Created: 2024/01/22 11:59:54 by arturhar          #+#    #+#             */
+/*   Updated: 2024/01/22 12:00:45 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
@@ -17,7 +16,6 @@ char	*ft_strchr(const char *str, int c)
 	while ((char)c != *str)
 	{
 		if (!*str)
-		
 			return (0);
 		str++;
 	}

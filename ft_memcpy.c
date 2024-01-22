@@ -1,15 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_display_file.c                                  :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 00:31:44 by arturhar          #+#    #+#             */
-/*   Updated: 2024/01/17 00:31:50 by arturhar         ###   ########.fr       */
+/*   Created: 2024/01/22 11:55:32 by arturhar          #+#    #+#             */
+/*   Updated: 2024/01/22 11:55:51 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
@@ -20,7 +19,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	if ((dest == src) || n == 0)
 		return (dest);
-
 	i = 0;
 	d = (char *)dest;
 	s = (const char *)src;
