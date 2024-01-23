@@ -48,7 +48,7 @@ OBJS = ${SRCS:.c=.o}
 BONUS_OBJS = ${SRCB:.c=.o}
 
 LIBC = ar rcs
-CC = cc
+CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 
@@ -69,4 +69,8 @@ fclean: clean
 bonus: ${OBJS} ${BONUS_OBJS}
 	${LIBC} ${NAME} ${OBJS} ${BONUS_OBJS}
 
+
+so: ${OBJS} ${BONUS_OBJS}
+	$(CC) -nostartfiles -shared -o libft.so ${OBJS} ${BONUS_OBJS}
 re: fclean all
+
