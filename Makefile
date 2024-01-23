@@ -70,7 +70,5 @@ bonus: ${OBJS} ${BONUS_OBJS}
 	${LIBC} ${NAME} ${OBJS} ${BONUS_OBJS}
 
 
-so: ${OBJS} ${BONUS_OBJS}
-	$(CC) -nostartfiles -shared -o libft.so ${OBJS} ${BONUS_OBJS}
 re: fclean all
 
