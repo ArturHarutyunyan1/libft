@@ -36,3 +36,11 @@ int	ft_atoi(const char *str)
 	}
 	return (num * neg);
 }
+
+//int main()
+//{
+//printf("ft - %d\nlib - %d\n", ft_atoi(""), atoi(""));
+//printf("ft - %d\nlib - %d\n", ft_atoi("0"), atoi("0"));
+//printf("ft - %d\nlib - %d\n", ft_atoi("123456798123"), atoi("123456798123"));
+//printf("ft - %d\nlib - %d\n", ft_atoi("0.4987"), atoi("0.4987"));
+//}

@@ -21,3 +21,11 @@ void	ft_bzero(void *s, size_t n)
 	while (i < n)
 		str[i++] = 0;
 }
+
+//int main()
+//{
+//    char str[13] = "Hello Vaspur";
+//    ft_bzero(str, 5);
+//    printf("%s", str);
+//    return (0);
+//}

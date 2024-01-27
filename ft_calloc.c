@@ -10,18 +10,33 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#define UNIT_MAX_SQRT 65535
 
 void	*ft_calloc(size_t count, size_t size)
 {
+	if ((count > SIZE_MAX || size > SIZE_MAX) || (count > 0 && SIZE_MAX / count < size))
+		return (NULL);
 	void	*ptr;
 
-	if ((count > UNIT_MAX_SQRT || size > UNIT_MAX_SQRT)
-		&& (count > 0 && UNIT_MAX_SQRT / count < size))
-		return (NULL);
 	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);
 	ft_bzero (ptr, count * size);
 	return (ptr);
 }
+
+// int main() {
+// 	size_t count = 5;
+// 	size_t size = sizeof(int);
+
+// 	int *arr = (int *)ft_calloc(count, size);
+// 	int *arr1 = (int *)calloc(count, size);
+// 	for (size_t i = 0; i < count; i++)
+// 	{
+// 		printf("ft - %d \n", arr[i]);
+// 	}
+// 	for (size_t i = 0; i < count; i++)
+// 	{
+// 		printf("lib - %d \n", arr1[i]);
+// 	}
+
+// }

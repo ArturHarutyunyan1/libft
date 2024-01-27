@@ -25,3 +25,35 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		current = current->next;
 	current->next = new;
 }
+
+// int main()
+// {
+	// t_list *lst, *node1, *node2, *node3, *new, *current;
+
+	// node1 = (t_list *)malloc(sizeof(t_list));
+	// node2 = (t_list *)malloc(sizeof(t_list));
+	// node3 = (t_list *)malloc(sizeof(t_list));
+	// new = (t_list *)malloc(sizeof(t_list));
+
+// 	node1->content = "Hello";
+// 	node2->content = "Gaspar";
+// 	node3->content = "Vaspur";
+// 	new->content = "End of the list";
+
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = NULL;
+
+// 	lst = node1;
+// 	ft_lstadd_back(&lst, new);
+// 	current = lst;
+// 	while (current != NULL)
+// 	{
+// 		printf("%s\n", (char *)current->content);
+// 		current = current->next;
+// 	}
+// 	free (node1);
+// 	free (node2);
+// 	free (node3);
+// 	free (new);
+// }
