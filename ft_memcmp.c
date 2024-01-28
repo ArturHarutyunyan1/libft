@@ -28,3 +28,11 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t n)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char ptr1[30] = "Hello nigger";
+// 	char ptr2[30] = "jello nigger";
+
+// 	printf("%d", ft_memcmp(ptr1, ptr2, sizeof(ptr1)));
+// }

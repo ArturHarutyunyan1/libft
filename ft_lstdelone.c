@@ -13,7 +13,37 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	(del)(lst->content);
-	free(lst);
-	lst = NULL;
+	if (lst->content)
+		(del)(lst->content);
+	free (lst);
 }
+
+
+
+// int main()
+// {
+// 	t_list *node1, *node2, *node3;
+
+// 	node1 = (t_list *)malloc(sizeof(t_list));
+// 	node2 = (t_list *)malloc(sizeof(t_list));
+// 	node3 = (t_list *)malloc(sizeof(t_list));
+
+// 	if (!node1 || !node2 || !node3)
+// 	{
+// 		return (0);
+// 	}
+
+// 	node1->content = "Gasparcho";
+// 	node2->content = "Vaspurak";
+// 	node3->content = "Agatangexos";
+
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = NULL;
+
+// 	printf("nodes before\n node1 - %s\nnode2 - %s\nnode3 - %s\n", (char *)node1->content, (char *)node2->content, (char *)node3->content);
+// 	ft_lstdelone(node1, &del);
+// 	ft_lstdelone(node2, &del);
+// 	ft_lstdelone(node3, &del);
+// 	return (0);
+// }

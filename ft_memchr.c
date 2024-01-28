@@ -24,3 +24,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char s[35] = "Hello Movses, this is Gaspar";
+// 	int c = 'G';
+// 	char *ret, *ret1;
+	
+// 	ret = ft_memchr(s, c, sizeof(s));
+// 	ret1 = ft_memchr(s, c, sizeof(s));
+
+// 	printf("ft - %s\nlib - %s\n", ret, ret1);
+// }

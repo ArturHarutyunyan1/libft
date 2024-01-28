@@ -29,3 +29,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int main() {
+//     const char src[20] = "Hello";
+
+//     memcpy(src + 3, src, sizeof(src));
+//     printf("%s", src);
+
+//     return 0;
+// }

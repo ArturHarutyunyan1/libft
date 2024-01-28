@@ -35,3 +35,48 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (result);
 }
+
+// void *f(void *a)
+// {
+// 	char *dup;
+
+// 	dup = ft_strdup((char *)a);
+// 	return ((char *)dup);
+// }
+
+// void del(void *a)
+// {
+// 	free (a);
+// }
+
+// int main()
+// {
+// 	t_list *node1, *node2, *node3, *lst, *result;
+
+// 	node1 = (t_list *)malloc(sizeof(t_list));
+// 	node2 = (t_list *)malloc(sizeof(t_list));
+// 	node3 = (t_list *)malloc(sizeof(t_list));
+// 	lst = (t_list *)malloc(sizeof(t_list));
+// 	result = (t_list *)malloc(sizeof(t_list));
+
+// 	if (!node1 || !node2 || !node3 || !result || !lst)
+// 	{
+// 		return (0);
+// 	}
+// 	node1->content = "Gasparcho";
+// 	node2->content = "Vaspurak";
+// 	node3->content = "Agatangexos";
+
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = NULL;
+	
+// 	lst = node1;
+// 	result = ft_lstmap(lst, f, &del);
+
+// 	while (result)
+// 	{
+// 		printf ("%s\n", (char *)result->content);
+// 		result = result->next;
+// 	}
+// }

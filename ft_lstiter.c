@@ -22,3 +22,34 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		val = val->next;
 	}
 }
+
+// void f(void *a)
+// {
+// 	printf("%s\n", (char *)a);
+// }
+
+// int main()
+// {
+// 	t_list *node1, *node2, *node3, *lst;
+
+// 	node1 = (t_list *)malloc(sizeof(t_list));
+// 	node2 = (t_list *)malloc(sizeof(t_list));
+// 	node3 = (t_list *)malloc(sizeof(t_list));
+// 	lst = (t_list *)malloc(sizeof(t_list));
+
+// 	if (!node1 || !node2 || !node3)
+// 	{
+// 		return (0);
+// 	}
+// 	node1->content = "Gasparcho";
+// 	node2->content = "Vaspurak";
+// 	node3->content = "Agatangexos";
+
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = NULL;
+	
+// 	lst = node1;
+
+// 	ft_lstiter(lst, &f);
+// }
