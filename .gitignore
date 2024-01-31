@@ -16,3 +16,9 @@
 
 # Debug files
 *.dSYM/
+
+#Vscode
+*.vscode
+
+# Idea
+*.idea
