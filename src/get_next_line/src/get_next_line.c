@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: arturhar <arturhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 15:34:59 by arturhar          #+#    #+#             */
-/*   Updated: 2024/02/21 15:35:02 by arturhar         ###   ########.fr       */
+/*   Updated: 2024/05/29 21:20:22 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "get_next_line.h"
+
+#include "../include/get_next_line.h"
 
 char	*ft_join(char *buffer, char *buf)
 {

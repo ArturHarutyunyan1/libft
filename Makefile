@@ -5,6 +5,8 @@ FT_LST := ft_lst
 FT_MEM := ft_mem
 FT_STR := ft_str
 FT_TO := ft_to
+PRINTF := ft_printf
+GNL := get_next_line
 NAME = libft.a
 
 SRCS := $(SRC_DIR)/$(FT_FD)/ft_putchar_fd.c \
@@ -41,6 +43,12 @@ SRCS := $(SRC_DIR)/$(FT_FD)/ft_putchar_fd.c \
         $(SRC_DIR)/$(FT_TO)/ft_itoa.c \
         $(SRC_DIR)/$(FT_TO)/ft_tolower.c \
         $(SRC_DIR)/$(FT_TO)/ft_toupper.c \
+        $(SRC_DIR)/$(PRINTF)/src/ft_format_parser.c \
+        $(SRC_DIR)/$(PRINTF)/src/ft_print_hex.c \
+        $(SRC_DIR)/$(PRINTF)/src/ft_printf_utils.c \
+        $(SRC_DIR)/$(PRINTF)/src/ft_printf.c \
+        $(SRC_DIR)/$(GNL)/src/get_next_line.c \
+        $(SRC_DIR)/$(GNL)/src/get_next_line_utils.c
 
 SRCB := $(SRC_DIR)/$(FT_LST)/ft_lstadd_back.c \
         $(SRC_DIR)/$(FT_LST)/ft_lstadd_front.c \
@@ -79,4 +87,3 @@ bonus: ${OBJS} ${BONUS_OBJS}
 
 
 re: fclean all
-

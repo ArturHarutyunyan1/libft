@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: arturhar <arturhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 13:29:12 by arturhar          #+#    #+#             */
-/*   Updated: 2024/02/02 13:33:06 by arturhar         ###   ########.fr       */
+/*   Updated: 2024/05/29 21:23:04 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_printf.h"
+
+#include "../include/ft_printf.h"
 
 int	ft_hex_len(unsigned long long hex)
 {

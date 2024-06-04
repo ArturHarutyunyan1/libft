@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_format_parser.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: arturhar <arturhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 13:25:42 by arturhar          #+#    #+#             */
-/*   Updated: 2024/02/02 13:29:05 by arturhar         ###   ########.fr       */
+/*   Updated: 2024/05/29 21:23:09 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_printf.h"
+
+#include "../include/ft_printf.h"
 
 int	format_parser(va_list args, const char f)
 {

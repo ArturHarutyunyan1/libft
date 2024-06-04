@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arturhar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: arturhar <arturhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 13:37:37 by arturhar          #+#    #+#             */
-/*   Updated: 2024/02/02 13:40:42 by arturhar         ###   ########.fr       */
+/*   Updated: 2024/05/29 21:22:59 by arturhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_printf.h"
+
+#include "../include/ft_printf.h"
 
 void	reverse(const char *str)
 {

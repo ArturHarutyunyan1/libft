@@ -19,6 +19,8 @@
 # include <ctype.h>
 # include <string.h>
 # include <fcntl.h>
+# include "../src/ft_printf/include/ft_printf.h"
+# include "../src/get_next_line/include/get_next_line.h"
 
 typedef struct s_list
 {
